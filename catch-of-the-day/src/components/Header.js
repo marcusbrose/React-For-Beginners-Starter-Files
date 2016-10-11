@@ -1,5 +1,9 @@
 import React from 'react'
 
+const propTypes = {
+  tagline: React.PropTypes.string.isRequired,
+}
+
 // stateless component, has only render method
 const Header = (props) => {
   return (
@@ -16,5 +20,7 @@ const Header = (props) => {
     </header>
   )
 }
+
+Header.propTypes = propTypes
 
 export default Header

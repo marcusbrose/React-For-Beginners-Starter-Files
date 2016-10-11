@@ -6,6 +6,10 @@ import Fish from './Fish'
 import sampleFishes from '../sample-fishes'
 import base from '../base'
 
+const propTypes = {
+  params: React.PropTypes.object.isRequired
+}
+
 class App extends React.Component {
 
   constructor() {
@@ -115,5 +119,7 @@ class App extends React.Component {
     )
   }
 }
+
+App.propTypes = propTypes
 
 export default App
